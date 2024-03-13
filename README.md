@@ -6,10 +6,10 @@ Click the button below to start a new development environment based upon **test*
 
 # Références
 
-Cours principal : https://cours-iut-montreuil.github.io
-Grosse formation `Docker` / `Kubernetes` (_open source_) : https://github.com/jpetazzo/container.training
-Des petites vidéos pour comprendre `Docker` avec des dessins : https://youtube.com/playlist?list=PLmw3X80dPdlyRV2EUKnFOvBACs_tcArd0&si=hkNEgViGcL7i7rI9
-Des petites vidéos pour comprendre `Kubernetes` avec des dessins : https://youtube.com/playlist?list=PLmw3X80dPdlzksg6X9s23LEkLMWFGGUn5&si=6IF66Hvs5gfFG22o
+- [Cours principal](https://cours-iut-montreuil.github.io)
+- [Grosse formation `Docker` / `Kubernetes` (_open source_)](https://github.com/jpetazzo/container.training)
+- [Des petites vidéos pour comprendre `Docker` avec des dessins](https://youtube.com/playlist?list=PLmw3X80dPdlyRV2EUKnFOvBACs_tcArd0&si=hkNEgViGcL7i7rI9)
+- [Des petites vidéos pour comprendre `Kubernetes` avec des dessins](https://youtube.com/playlist?list=PLmw3X80dPdlzksg6X9s23LEkLMWFGGUn5&si=6IF66Hvs5gfFG22o)
 
 # Notes
 
