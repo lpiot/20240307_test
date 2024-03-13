@@ -17,7 +17,7 @@ Cette démarche a différents effets indésirables qu'il va falloir gérer, adre
    - en jouant sur le `PATH` exposé dans la session qui lance les processus applicatifs, on peut faire cohabiter plusieurs _stacks_ (c'est le principe des outils comme `virtualenv` en `Python`). Mais c'est très pénible à gérer car il faut beaucoup d'expertise et de tests pour arriver à le configurer.
 - comment isoler les _workloads_ applicatives d'un client/d'un _tenant_ par rapport aux autres ?
    - au niveau _filesystem_ (les droits `UGO` sont une première réponse. `chroot` est un niveau de réponse renforcé)
-     ![chroot schema](/images/chroot.png)
+     ![chroot schema](/images/chroot.jpg)
    - au niveau réseau
    - au niveau processus
    - au niveau du quota de consommation de ressources par chaque processus
@@ -63,7 +63,7 @@ En se basant schématiquement sur les mêmes principes de redirection d'appels s
 
 En utilisant ces isolations à une échelle plus fine, sur des éléments plus petits que des
 
-![software stack](/images/software stack.png)
+![software stack](/images/software-stack.jpg)
 
 # Glossaire
 
@@ -77,7 +77,7 @@ On parle aussi de _rolling-update_, dans le sens que cette mise à jour se fait 
 Le _canary testing_ ou _canary deployment_ est une variante de cette pratique. La méthodologie est la même. Mais l'objectif est différent.  
 Ici, on souhaite exposer une version à une population restreinte d'utilisateurs, à des fins de tests, d'analyse de réaction du marché, etc. Dans ce cas, on n'adresse pas l'ensemble des nœuds, mais on s'en tient à un petit sous-ensemble qui servira d'échantillon pour tests. Des beta-testeurs à pas cher !
 
-![canary testing schema](/images/canary testing.jpg)
+![canary testing schema](/images/canary-testing.jpg)
 
 ## copy-on-write
 
@@ -110,7 +110,7 @@ Quand on veut augmenter la puissance disponible pour servir une _workload_, on a
 On peut augmenter le nombre de serveurs qui peuvent servir la _workload_. Dans ce cas, on parle de scalabilité horizontale ou _scale out_.  
 Les requêtes soumises par les utilisateurs sont réparties sur l'ensemble des nœuds (i.e. des serveurs), qui servent la _workload_ applicative. Ainsi, chaque nœud ne sert qu'une partie des utilisateurs.
 
-![scale out schema](/images/scale out.jpg)
+![scale out schema](/images/scale-out.jpg)
 
 ## scale-up / scalabilité verticale
 
