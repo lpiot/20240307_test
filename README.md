@@ -61,7 +61,14 @@ En se basant schématiquement sur les mêmes principes de redirection d'appels s
 - mais plus au niveau de matériel virtuel pointant vers du matériel physique
 - mais au sein même de l'_OS_, avec des mécanismes d'isolation que sont les `namespaces` et les `cgroups`.
 
-En utilisant ces isolations à une échelle plus fine, sur des éléments plus petits que des
+En utilisant ces isolations à une échelle plus fine, sur des éléments plus petits que des composants physique, on dispose d'une technologie de gestion des processus isolés beaucoup plus légère, véloce et peu consommatrice en ressources matérielles et en effort d'administration.
+
+En plus de cela, la technologie des _container images_ permet de **standardiser** la manière dont on manipule une _workload_ applicative :
+
+- dans la manière de la _package_ et de la distribuer
+- dans la manière de la _deploy_
+- dans la manière de gérer son cycle de vie (démarrage / arrêt / pause / suppression)
+- dans la manière dont on _monitor_ son activité
 
 ![software stack](/images/software-stack.jpg)
 
